@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root{
+    --purple:#7D2AE8;
+    --purple_plus: #5b13b9;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    /* overflow-x: hidden; */
+    scroll-behavior: smooth;
+}
+
+@keyframes layer{
+    100%{
+        left: 0%;
+    }
+}
+
+.component{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 7rem;
+    width: 18rem;
+    cursor: pointer;
+    background: var(--purple);
+    border-radius: 5rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2) ;
+    overflow: hidden;
+
+}
+
+.component::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--purple_plus);
+    border-radius: 6rem;
+}
+
+.component.active{
+    width: 35rem;
+    height: 2rem;
+}
+
+.component.active::before{
+    animation: layer 6s ease-in-out forwards;
+}
+
+.component.active .content{
+    font-size: 1.5rem;
+}
+
+.component .content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #FFF;
+}
+
+.component .content i{
+    padding: .5rem;
+}
