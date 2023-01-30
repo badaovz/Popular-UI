@@ -1,0 +1,27 @@
+.list {
+    display: flex;
+    margin-bottom: 2.4rem;
+}
+
+.list__image {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.list__detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.list__name {
+    color: #102a42;
+    font-size: 2rem;
+}
+.list__age {
+    color: #617d98;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}

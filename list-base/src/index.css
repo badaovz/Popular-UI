@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: serif;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #f28ab2;
+}
+
+.App {
+    width: 90vw;
+    max-width: 500px;
+    margin: 5rem auto;
+    padding: 2rem 3rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.App__title {
+    font-size: 4rem;
+    margin-bottom: 2.4rem;
+    font-weight: 400;
+    color: #102a42;
+}
+
+.btn {
+    width: 100%;
+    color: #fff;
+    font-size: 3rem;
+    background-color: #f28ab2;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 0;
+    cursor: pointer;
+}
