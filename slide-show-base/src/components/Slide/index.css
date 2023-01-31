@@ -1,0 +1,100 @@
+.slide {
+    width: 600px;
+    max-width: 80vw;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+    padding: 2rem;
+}
+
+.slide__avatar {
+    display: block;
+    height: 150px;
+    position: relative;
+    width: 150px;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.slide__avatar i {
+    font-size: 2rem;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: var(--blue-color);
+    position: absolute;
+    left: 0;
+    top: 1rem;
+}
+
+.slide__avatar img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide__avatar::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    background-color: var(--blue-color);
+    top: -0.3rem;
+    right: -0.8rem;
+    z-index: -1;
+}
+
+.slide__content {
+    font-size: 2rem;
+    color: #8bcbf9;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.slide__name {
+    color: var(--txt-primary-color);
+    text-transform: capitalize;
+}
+
+.slide__job {
+    text-transform: capitalize;
+    margin-block: 0.5rem;
+}
+
+.slide__detail {
+    color: var(--txt-second-color);
+}
+
+.slide__control {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.slide__control i {
+    padding: 1rem 1.6rem;
+    cursor: pointer;
+    transform: all 0.5s linear;
+}
+
+.slide__control i:hover {
+    color: var(--blue-color);
+}
+
+.btn.slide__btn {
+    color: var(--blue-color);
+    background-color: #ebf7ff;
+    transition: all 0.5s linear;
+    border: none;
+    width: unset;
+    font-size: 1.6rem;
+    padding-inline: 1rem;
+}
+
+.btn.slide__btn:hover {
+    background-color: var(--blue-color);
+    color: var(--txt-primary-color);
+}
