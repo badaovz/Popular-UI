@@ -1,0 +1,30 @@
+.accordion {
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    padding: 2rem;
+}
+
+.accordion__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion__header i {
+    color: #b4345c;
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: #eae6eb;
+    cursor: pointer;
+}
+
+.accordion__detail {
+    margin-top: 1rem;
+    display: none;
+}
+
+.accordion__detail.active {
+    display: block;
+}
