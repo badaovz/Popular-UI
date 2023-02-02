@@ -1,0 +1,124 @@
+:root {
+    --txt-primary-color: #102a42;
+    --txt-second-color: #617d98;
+    --red-color: #bb2525;
+    --blue-color: #49a6e9;
+    --gray-color: #f1f5f8;
+    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: serif;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--gray-color);
+}
+
+.App {
+    width: 90vw;
+    max-width: 1170px;
+    margin: 5rem auto;
+    text-align: center;
+    color: var(--txt-primary-color);
+}
+
+.App__title {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.App__company {
+    display: block;
+    margin-block: 1rem;
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    border: 2px solid transparent;
+    color: var(--txt-primary-color);
+    cursor: pointer;
+}
+
+.App__company:hover,
+.App__company.active {
+    border-left: 2px solid #2caeba;
+    color: #2caeba;
+}
+
+.App__content {
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 3rem;
+}
+
+.underline {
+    width: 100px;
+    height: 5px;
+    margin-inline: auto;
+    background-color: #2caeba;
+}
+
+.loading {
+    text-align: center;
+    margin-top: 6rem;
+    font-size: 4rem;
+    color: var(--txt-primary-color);
+}
+
+.btn {
+    width: 100%;
+    color: var(--red-color);
+    font-size: 3rem;
+    background-color: #fff;
+    border-color: var(--red-color);
+    border-radius: 5px;
+    padding: 5px 0;
+    cursor: pointer;
+    margin: 1rem auto;
+}
+
+.btn.medium {
+    width: 80%;
+    font-size: 2rem;
+}
+
+.btn.center {
+    display: flex;
+    justify-content: center;
+}
+
+.btn.small {
+    width: unset;
+    padding-inline: 1rem;
+}
+
+@media (max-width: 1023px) {
+    .App__content {
+        grid-template-columns: 1fr;
+    }
+
+    .App__companies {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .App__company {
+        margin-inline: 1rem;
+        font-size: 1.6rem;
+    }
+
+    .App__company:hover,
+    .App__company.active {
+        border-left: unset;
+        border-bottom: 2px solid #2caeba;
+        color: #2caeba;
+    }
+}

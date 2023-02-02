@@ -1,0 +1,55 @@
+.tab {
+    color: var(--txt-primary-color);
+    font-size: 1.6rem;
+    text-align: left;
+    padding: 2rem;
+}
+
+.tab__title {
+    text-transform: capitalize;
+    font-size: 3rem;
+}
+
+.tab__company {
+    padding: 0.5rem 1rem;
+    margin-block: 1rem;
+    background-color: #dae2ec;
+    border-radius: 5px;
+    display: inline-block;
+    color: var(--txt-second-color);
+}
+
+.tab__date {
+    color: var(--txt-second-color);
+    margin-bottom: 3rem;
+}
+
+.tab__duty {
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.tab__duty i {
+    color: #2caeba;
+    margin-right: 2rem;
+}
+
+.tab__detail {
+    line-height: 2.4rem;
+    /* color: var(--txt-second-color); */
+}
+
+.tab button {
+    color: #fff;
+    background-color: #2caeba;
+    border: none;
+    width: unset;
+    font-size: 1.6rem;
+    padding: 1rem 4rem;
+}
+
+.tab button:hover {
+    background-color: #bff8fd;
+    color: var(--txt-primary-color);
+}
