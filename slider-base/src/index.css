@@ -1,0 +1,106 @@
+:root {
+    --txt-primary-color: #102a42;
+    --txt-second-color: #617d98;
+    --red-color: #bb2525;
+    --blue-color: #49a6e9;
+    --gray-color: #f1f5f8;
+    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --orange-color: #ba5d2c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: serif;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--gray-color);
+}
+
+.App {
+    width: 90vw;
+    max-width: 1170px;
+    margin: 5rem auto;
+    text-align: center;
+    color: var(--txt-primary-color);
+}
+
+.App__title {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.App__content {
+    width: 80vw;
+    max-width: 800px;
+    height: 480px;
+    margin-top: 4rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: auto;
+}
+
+.App__content button:hover {
+    background-color: var(--orange-color);
+}
+
+.App__box {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+.App__control {
+    font-size: 2rem;
+    width: 36px;
+    height: 36px;
+    background-color: #617d98;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.underline {
+    width: 100px;
+    height: 5px;
+    margin-inline: auto;
+    background-color: var(--orange-color);
+    border-radius: 5px;
+}
+
+.btn {
+    width: 100%;
+    color: currentColor;
+    font-size: 3rem;
+    background-color: #fff;
+    border-color: currentColor;
+    border-radius: 5px;
+    padding: 5px 0;
+    cursor: pointer;
+    margin: 1rem auto;
+}
+
+.btn.medium {
+    width: 80%;
+    font-size: 2rem;
+}
+
+.btn.center {
+    display: flex;
+    justify-content: center;
+}
+
+.btn.small {
+    width: unset;
+    padding-inline: 1rem;
+}
