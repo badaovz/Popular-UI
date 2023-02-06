@@ -10,7 +10,8 @@ function App() {
         setData(texts.slice(0, count));
     }, [count]);
 
-    const handleGenerate = () => {
+    const handleGenerate = (e) => {
+        e.preventDefault();
         if (value < 0) {
             setCount(0);
             setValue(0);
@@ -22,7 +23,7 @@ function App() {
     return (
         <div className='App'>
             <h4 className='App__title'>TIRED OF BORING LOREM IPSUM?</h4>
-            <div className='App__control'>
+            <form className='App__control' onSubmit={handleGenerate}>
                 <p className='App__paragraph'>Paragraphs:</p>
                 <input
                     type='number'
@@ -31,10 +32,8 @@ function App() {
                     onChange={(e) => setValue(e.target.value)}
                     className='App__input'
                 />
-                <button className='btn small' onClick={handleGenerate}>
-                    Generate
-                </button>
-            </div>
+                <button className='btn small'>Generate</button>
+            </form>
 
             <div className='App__content'>
                 {data.map((d, index) => (
