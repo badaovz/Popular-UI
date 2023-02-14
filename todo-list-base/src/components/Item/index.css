@@ -1,0 +1,42 @@
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+}
+
+.item:hover {
+    background-color: var(--gray-color);
+}
+
+.item__control {
+    display: flex;
+}
+
+.item__edit,
+.item__del {
+    border: none;
+    cursor: pointer;
+}
+
+.item__del.none {
+    cursor: not-allowed;
+}
+
+.item__edit {
+    color: #6be675;
+}
+
+.item__edit:hover {
+    color: green;
+}
+
+.item__del {
+    color: #e66b6b;
+    margin-left: 0.5rem;
+}
+
+.item__del:hover {
+    color: var(--red-color);
+}

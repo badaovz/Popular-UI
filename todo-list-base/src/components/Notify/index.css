@@ -1,0 +1,16 @@
+.alert {
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    padding-block: 0.5rem;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+}
