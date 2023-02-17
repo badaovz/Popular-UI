@@ -1,0 +1,223 @@
+:root {
+    --txt-primary-color: #102a42;
+    --txt-second-color: #617d98;
+    --red-color: #bb2525;
+    --blue-color: #49a6e9;
+    --gray-color: #f1f5f8;
+    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --orange-color: #ba5d2c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: serif;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--gray-color);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: unset;
+}
+
+.App {
+    background-color: #fff;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    align-items: center;
+    background-color: #fff;
+    padding: 2rem;
+}
+
+.App__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.App__logo {
+    font-size: 3rem;
+}
+
+.App__logo span {
+    color: var(--blue-color);
+}
+
+.App__bar {
+    display: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--blue-color);
+    transition: all 0.2s linear;
+    background-color: #fff;
+}
+
+.App__bar:hover {
+    transform: rotate(90deg);
+}
+
+.App__search {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--gray-color);
+    font-size: 1.6rem;
+    color: var(--txt-second-color);
+}
+
+.App__links,
+.App__socials {
+    display: flex;
+    color: var(--txt-second-color);
+    cursor: pointer;
+    align-items: center;
+}
+
+.App__link,
+.App__social {
+    padding: 0.2rem 0.6rem;
+    text-transform: capitalize;
+}
+.App__social {
+    color: var(--blue-color);
+}
+
+.App__social:hover,
+.App__link:hover {
+    color: #49a6e9;
+}
+
+.btn {
+    width: 100%;
+    color: currentColor;
+    font-size: 3rem;
+    background-color: #fff;
+    border-color: currentColor;
+    border-radius: 5px;
+    padding: 5px 0;
+    cursor: pointer;
+    margin: 1rem auto;
+}
+
+.btn.medium {
+    width: 80%;
+    font-size: 2rem;
+}
+
+.btn.center {
+    display: flex;
+    justify-content: center;
+}
+
+.btn.small {
+    width: unset;
+    padding-inline: 1rem;
+}
+
+.App__linksContainer {
+    height: auto;
+}
+
+@media (max-width: 840px) {
+    nav {
+        display: block;
+    }
+
+    .App__header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .App__search,
+    .App__socials {
+        display: none;
+    }
+
+    .App__bar {
+        display: block;
+    }
+
+    .App__links {
+        display: block;
+        width: 100%;
+        background-color: #fff;
+        transition: all 2s linear;
+    }
+
+    .App__link {
+        padding: 1rem 0;
+        transition: all 0.2s linear;
+    }
+
+    .App__link:hover {
+        color: #49a6e9;
+        background-color: #a5d5f8;
+        padding-left: 3rem;
+    }
+
+    .App__linksContainer {
+        height: 0;
+        overflow: hidden;
+        transition: all 0.2s linear;
+        animation: show 0.2s linear;
+    }
+
+    .App__linksContainer.show {
+        height: 200px;
+    }
+}
+
+@keyframes show {
+    0% {
+        height: 0;
+    }
+    10% {
+        height: 10%;
+    }
+    20% {
+        height: 20%;
+    }
+    30% {
+        height: 30%;
+    }
+    40% {
+        height: 40%;
+    }
+    50% {
+        height: 50%;
+    }
+    60% {
+        height: 60%;
+    }
+    70% {
+        height: 70%;
+    }
+    80% {
+        height: 80%;
+    }
+    90% {
+        height: 90%;
+    }
+    100% {
+        height: 100%;
+    }
+}
