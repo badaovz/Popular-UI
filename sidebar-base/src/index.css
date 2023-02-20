@@ -1,0 +1,196 @@
+:root {
+    --txt-primary-color: #102a42;
+    --txt-second-color: #617d98;
+    --red-color: #bb2525;
+    --blue-color: #49a6e9;
+    --gray-color: #f1f5f8;
+    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --orange-color: #ba5d2c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: serif;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--gray-color);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+.App {
+    background-color: #fff;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.App__bar {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    color: var(--blue-color);
+    border: none;
+    animation: bounce 2s ease-in-out infinite;
+    cursor: pointer;
+}
+
+.App__bar svg {
+    width: 30px;
+    height: 30px;
+}
+
+.App__modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    background-color: #222;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.App__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+.App__overlay.active {
+    display: block;
+}
+
+.App__box {
+    position: relative;
+    width: 50vw;
+    height: 300px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.App__closeModal {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.exitBtn {
+    font-size: 3rem;
+    color: var(--red-color);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn {
+    width: 100%;
+    color: currentColor;
+    font-size: 3rem;
+    background-color: #fff;
+    border-color: currentColor;
+    border-radius: 5px;
+    padding: 5px 0;
+    cursor: pointer;
+    margin: 1rem auto;
+}
+
+.btn.medium {
+    width: 80%;
+    font-size: 2rem;
+}
+
+.btn.center {
+    display: flex;
+    justify-content: center;
+}
+
+.btn.small {
+    width: unset;
+    padding-inline: 1rem;
+}
+
+@media (max-width: 840px) {
+    .App__box {
+        font-size: 2rem;
+    }
+}
+
+@keyframes show {
+    0% {
+        height: 0;
+    }
+    10% {
+        height: 10%;
+    }
+    20% {
+        height: 20%;
+    }
+    30% {
+        height: 30%;
+    }
+    40% {
+        height: 40%;
+    }
+    50% {
+        height: 50%;
+    }
+    60% {
+        height: 60%;
+    }
+    70% {
+        height: 70%;
+    }
+    80% {
+        height: 80%;
+    }
+    90% {
+        height: 90%;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
