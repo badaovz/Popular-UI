@@ -1,0 +1,60 @@
+.submenu {
+    background-color: #fff;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    position: absolute;
+    transform: translateX(-50%);
+    display: none;
+    z-index: 1000;
+    color: var(--txt-second-color);
+    padding: 2rem;
+    text-transform: capitalize;
+    transition: all 0.3s linear;
+    font-size: 2rem;
+}
+.submenu::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #fff;
+}
+
+.submenu.show {
+    display: block;
+}
+
+.submenu__title {
+    color: var(--txt-primary-color);
+    margin-bottom: 1rem;
+}
+.submenu__links {
+    display: grid;
+    gap: 0.5rem 2rem;
+    padding-block: 1rem;
+}
+
+.col-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.col-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.col-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.submenu__link a {
+    display: flex;
+    align-items: center;
+    padding-inline: 1rem;
+}
+
+.submenu__link a svg {
+    margin-right: 0.5rem;
+}
