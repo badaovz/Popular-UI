@@ -1,0 +1,143 @@
+:root {
+    --txt-primary-color: #102a42;
+    --txt-second-color: #617d98;
+    --red-color: #bb2525;
+    --blue-color: #49a6e9;
+    --gray-color: #f1f5f8;
+    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --orange-color: #ba5d2c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: serif;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--gray-color);
+    background: url(./asset/images/hero.svg);
+    background-repeat: no-repeat;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.App {
+    position: relative;
+    max-width: 90vw;
+    margin-inline: auto;
+}
+
+.btn {
+    /* width: 100%; */
+    font-size: 1.6rem;
+    border-radius: 5px;
+    padding: 0.5rem 1.4rem;
+    border: none;
+    cursor: pointer;
+    /* margin: 1rem auto; */
+    background-color: #222;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #617d98;
+}
+
+.btn.medium {
+    width: 80%;
+    font-size: 2rem;
+}
+
+.btn.center {
+    display: flex;
+    justify-content: center;
+}
+
+.btn.small {
+    width: unset;
+    padding-inline: 1rem;
+}
+
+.loading {
+    font-size: 4rem;
+    color: var(--txt-second-color);
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+@media (max-width: 840px) {
+    .App__box {
+        font-size: 2rem;
+    }
+}
+
+@keyframes show {
+    0% {
+        height: 0;
+    }
+    10% {
+        height: 10%;
+    }
+    20% {
+        height: 20%;
+    }
+    30% {
+        height: 30%;
+    }
+    40% {
+        height: 40%;
+    }
+    50% {
+        height: 50%;
+    }
+    60% {
+        height: 60%;
+    }
+    70% {
+        height: 70%;
+    }
+    80% {
+        height: 80%;
+    }
+    90% {
+        height: 90%;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,38 @@
+.navbar {
+    background-color: var(--blue-color);
+}
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    width: 90vw;
+    max-width: 1170px;
+    margin-inline: auto;
+    height: 8rem;
+}
+.navbar__logo {
+    font-size: 3.6rem;
+}
+.navbar__cart {
+    position: relative;
+}
+
+.navbar__cart svg {
+    font-size: 3.6rem;
+}
+
+.navbar__amount {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(60%, -60%);
+    background-color: #85c6f4;
+    border-radius: 50%;
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

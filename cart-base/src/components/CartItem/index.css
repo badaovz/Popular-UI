@@ -1,0 +1,40 @@
+.cartItem {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 0 2rem;
+    font-size: 1.6rem;
+    color: var(--txt-primary-color);
+    margin-bottom: 2rem;
+}
+
+.image {
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+}
+.cartItem__detail {
+    text-align: left;
+}
+.cartItem__title {
+}
+.cartItem__price {
+    color: var(--txt-second-color);
+    margin-block: 0.4rem;
+}
+.btn.btn__remove {
+    background-color: transparent;
+    color: var(--blue-color);
+    padding: unset;
+}
+.btn.btn__remove:hover {
+    background-color: transparent;
+}
+.cartItem__control svg {
+    color: var(--blue-color);
+    font-size: 2rem;
+    cursor: pointer;
+}
+.cartItem__amount {
+    font-size: 2rem;
+}
