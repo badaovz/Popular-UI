@@ -19,6 +19,8 @@
     width: 320px;
     height: 200px;
     position: relative;
+    /* cursor: zoom-in; */
+    cursor: none;
 }
 
 .image img {
@@ -35,9 +37,31 @@
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
     position: absolute;
     border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
     display: none;
 }
 
 .mirror.show {
     display: block;
 }
+
+/* ### */
+/* 
+figure.zoom {
+    background-position: 50% 50%;
+    position: relative;
+    width: 500px;
+    overflow: hidden;
+    cursor: zoom-in;
+  }
+  
+  figure.zoom img:hover {
+    opacity: 0;
+  }
+  
+  figure.zoom img {
+    transition: opacity 0.5s;
+    display: block;
+    width: 100%;
+  } */
