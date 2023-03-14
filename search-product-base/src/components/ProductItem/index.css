@@ -1,0 +1,45 @@
+.productItem {
+    border-radius: 5px;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s linear;
+}
+
+.productItem:hover {
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.productItem__image {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.productItem__content {
+    padding: 2rem;
+    font-size: 2rem;
+    text-align: left;
+}
+.productItem__name {
+    font-size: 3rem;
+}
+.productItem__info {
+    margin-block: 1rem;
+}
+.productItem__glass {
+    margin-bottom: 1rem;
+    color: var(--txt-second-color);
+}
+.productItem__detail {
+    color: #fff;
+    background-color: #476a2e;
+    font-size: 1.6rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+}
+
+.productItem__detail:hover {
+    background-color: #d4e6a5;
+    color: var(--txt-primary-color);
+}

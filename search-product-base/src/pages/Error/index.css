@@ -1,0 +1,16 @@
+.error {
+    margin-top: 20rem;
+    color: var(--txt-second-color);
+    font-size: 2rem;
+    text-align: center;
+    width: 90vw;
+    max-width: 1170px;
+    margin-inline: auto;
+}
+.error__code {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.error__code {
+    font-size: 5rem;
+}

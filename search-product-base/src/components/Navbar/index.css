@@ -1,0 +1,40 @@
+.navbar {
+    background-color: var(--blue-color);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    width: 90vw;
+    max-width: 1170px;
+    margin-inline: auto;
+    height: 8rem;
+}
+.navbar__logo {
+    font-size: 3.6rem;
+}
+
+.navbar__logo span {
+    color: green;
+}
+
+.navbar__links {
+    display: flex;
+    font-size: 2rem;
+}
+
+.navbar__link {
+    padding-inline: 1rem;
+}
+
+@media (max-width: 767px) {
+    .navbar__logo {
+        font-size: 2rem;
+    }
+}

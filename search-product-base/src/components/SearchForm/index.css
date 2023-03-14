@@ -1,0 +1,29 @@
+.search {
+    padding: 3rem;
+    width: 50vw;
+    margin-inline: auto;
+    margin-top: 15rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.search__title {
+    color: green;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.search__input {
+    width: 100%;
+    font-size: 2rem;
+    background-color: #f1f5f8;
+    color: var(--txt-seconde-color);
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+}
+
+@media (max-width: 1039px) {
+    .search {
+        width: 90vw;
+    }
+}

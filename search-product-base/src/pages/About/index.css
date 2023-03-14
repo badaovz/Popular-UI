@@ -1,0 +1,24 @@
+.about {
+    margin-top: 12rem;
+    width: 60vw;
+    max-width: 1170px;
+    margin-inline: auto;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--txt-primary-color);
+}
+.about__title {
+    margin-bottom: 4rem;
+    font-size: 3rem;
+}
+.about__info {
+    color: var(--txt-second-color);
+    line-height: 1.5;
+    text-align: justify;
+}
+
+@media (max-width: 767px) {
+    .about {
+        width: 80vw;
+    }
+}
