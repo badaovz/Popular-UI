@@ -1,0 +1,84 @@
+:root {
+    --txt-primary-color: #102a42;
+    --txt-second-color: #617d98;
+    --red-color: #bb2525;
+    --blue-color: #49a6e9;
+    --gray-color: #f1f5f8;
+    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --orange-color: #ba5d2c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: serif;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--gray-color);
+    background: url(./asset/images/hero.svg);
+    background-repeat: no-repeat;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.app {
+    width: 90vw;
+    max-width: 1170px;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 5rem;
+    font-size: 2rem;
+}
+
+.app__paragraph textarea {
+    display: block;
+    width: 100%;
+    height: 80vh;
+    border: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 3rem;
+    border-radius: 5px;
+    font-size: 2rem;
+    overflow: auto;
+    color: var(--txt-primary-color);
+}
+.app__markDown {
+    padding: 3rem;
+    color: var(--txt-second-color);
+}
+
+@media (max-width: 1039px) {
+    .app {
+        grid-template-columns: 1fr;
+    }
+
+    .app__paragraph textarea {
+        height: 50vh;
+    }
+
+    .app__markDown {
+        /* padding: 0; */
+    }
+}
