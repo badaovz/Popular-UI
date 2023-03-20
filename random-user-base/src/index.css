@@ -1,0 +1,129 @@
+:root {
+    --txt-primary-color: #102a42;
+    --txt-second-color: #617d98;
+    --red-color: #bb2525;
+    --blue-color: #49a6e9;
+    --gray-color: #f1f5f8;
+    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --orange-color: #ba5d2c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: serif;
+    font-size: 62.5%;
+}
+
+body {
+    /* background-color: var(--gray-color); */
+    /* background: url(./asset/images/hero.svg); */
+    /* height: 100vh; */
+    background: linear-gradient(to bottom, #2c2e31 50%, #f1f5f8 50%);
+    background-repeat: no-repeat;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.app {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--txt-second-color);
+}
+
+.app__container {
+    width: 50%;
+    /* height: 60%; */
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    overflow: auto;
+}
+.app__header {
+    background-color: #f1f5f8;
+    position: relative;
+    height: 130px;
+    border-bottom: 1px solid var(--txt-second-color);
+}
+
+.app__image {
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    padding: 0.5rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 30%);
+    object-fit: cover;
+    border: 1px solid var(--txt-second-color);
+    background-color: #fff;
+}
+
+.app__footer {
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+}
+.app__title {
+    margin-bottom: 1rem;
+}
+.app__value {
+    font-size: 3rem;
+    color: var(--txt-primary-color);
+}
+.app__info {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+.app__icon svg {
+    margin-block: 1rem;
+    font-size: 3rem;
+    color: var(--txt-second-color);
+}
+.app__icon svg:hover {
+    color: var(--blue-color);
+}
+
+.app__random {
+    padding: 0.5rem 1rem;
+    background-color: var(--blue-color);
+    border-radius: 5px;
+    color: #fff;
+    transition: all 0.2s linear;
+}
+
+.app__random:hover {
+    background-color: #063251;
+    color: var(--blue-color);
+}
+
+@media (max-width: 1039px) {
+    .app__container {
+        width: 90vw;
+    }
+}
