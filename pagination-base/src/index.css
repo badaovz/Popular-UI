@@ -1,0 +1,102 @@
+:root {
+    --txt-primary-color: #102a42;
+    --txt-second-color: #617d98;
+    --red-color: #bb2525;
+    --blue-color: #49a6e9;
+    --gray-color: #f1f5f8;
+    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --orange-color: #ba5d2c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: serif;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #f1f5f8;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.app {
+    width: 90vw;
+    max-width: 1170px;
+    margin-inline: auto;
+}
+
+.app__header {
+    text-align: center;
+    font-size: 4rem;
+    color: var(--txt-primary-color);
+    margin-block: 4rem;
+}
+
+.app__body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+}
+
+.pagination {
+    text-align: center;
+    margin-block: 6rem;
+}
+
+.pagination__back,
+.pagination__index,
+.pagination__next {
+    /* padding: 1rem; */
+}
+
+.pagination__index {
+    padding: 0.6rem 1.2rem;
+    margin: 1rem;
+    background-color: #8bcbf9;
+    border-radius: 5px;
+}
+
+.pagination__index.active {
+    background-color: #063251;
+    color: #fff;
+}
+
+.underline {
+    width: 10rem;
+    height: 5px;
+    background-color: var(--blue-color);
+    margin-inline: auto;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .app__body {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 739px) {
+    .app__body {
+        grid-template-columns: 1fr;
+    }
+}
