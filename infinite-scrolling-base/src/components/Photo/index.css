@@ -1,0 +1,40 @@
+.photo {
+    position: relative;
+    overflow: hidden;
+}
+.photo__img {
+    width: 100%;
+    height: 24rem;
+    object-fit: cover;
+}
+
+.photo__footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(100%);
+    transition: all 0.2s linear;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.photo:hover .photo__footer {
+    transform: translateY(0);
+}
+
+.photo__info {
+    line-height: 1.2;
+}
+
+.photo__avatar img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
