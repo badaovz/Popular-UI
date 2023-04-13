@@ -1,0 +1,17 @@
+.article {
+    color: var(--txt-color);
+    font-size: 2rem;
+    margin-block: 3rem;
+}
+.article__title {
+    font-size: 3rem;
+    color: var(--pink-color);
+    text-transform: capitalize;
+}
+.article__time {
+    margin-block: 1rem;
+}
+.article__time,
+.article__text {
+    font-style: italic;
+}

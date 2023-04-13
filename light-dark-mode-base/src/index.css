@@ -1,0 +1,91 @@
+/* :root {
+    --txt-primary-color: #102a42;
+    --txt-second-color: #617d98;
+    --red-color: #bb2525;
+    --blue-color: #49a6e9;
+    --gray-color: #f1f5f8;
+    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --orange-color: #ba5d2c;
+    --pink-color: #d23669;
+    --pink-light-color: #ffa7c4;
+} */
+
+.light-theme {
+    --bgc-color: #fff;
+    --txt-color: #282c35;
+    --pink-color: #d23669;
+}
+
+.dark-theme {
+    --bgc-color: #282c35;
+    --txt-color: #fff;
+    --pink-color: #ffa7c4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: serif;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--bgc-color);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.app {
+    width: 90vw;
+    max-width: 1170px;
+    margin-inline: auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 4rem 8rem;
+}
+
+.nav__title {
+    font-size: 4rem;
+    color: var(--txt-color);
+}
+
+.nav__toggle {
+    font-size: 1.6rem;
+    color: var(--bgc-color);
+    padding: 0.5rem 1rem;
+    background-color: var(--pink-color);
+    border-radius: 5px;
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .app__body {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 739px) {
+    .app__body {
+        grid-template-columns: 1fr;
+    }
+}
